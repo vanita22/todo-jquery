@@ -1,9 +1,4 @@
-.yellow .lighten-1{
+.linea{
 	width: 100%;
-	height: 30vh;
-	padding: 30px;
-}
-
-input{
-	width: 100px;
+	border-bottom: 2px solid purple;
 }
