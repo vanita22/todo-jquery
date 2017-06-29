@@ -1,15 +1,21 @@
 body{
-	background-color: purple;
+	background-image: url(../img/fotorecurso.jpg);
+	background-repeat: no-repeat;
+	background-position: cover;
 	font-weight: bold;
 }
 
 #box{
 	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.9);
 	width: 150px;
 	height: 400px;
 	float: left;
 	margin-top: 40px;
+}
+
+body h3{
+	font-weight: bold;
 }
 
 @media (max-width: 768px){
@@ -17,21 +23,28 @@ body{
 		float: top;
 		width: 100%;
 		height: auto;
-	}
-	#box h3{
-		writing-mode: horizontal-tb;
-		margin-top: 0;
-	}
+	}	
 }
 
 #box h3{
-	margin-top: 80px;
-	writing-mode: vertical-lr;
-	transform: rotate(180deg);
+	font-weight: bold;		
+}
+
+@media (min-width: 768px){
+	#box{
+		float: left;
+		width: 150px;
+		height: 400px;
+	}
+	#box h3{
+		margin-top: 80px;
+		writing-mode: vertical-lr;/*sirve para poner las letras de manera vertical*/
+		transform: rotate(180deg);/*sirve para direccionar la vista de las letras*/
+	}
 }
 
 #box-1{
-	background-color: rgba(110, 11, 77, 0.8);
+	background-color: rgba(110, 11, 77, 0.9);
 	width: 200px;
 	height: 900px;
 	float: right;	

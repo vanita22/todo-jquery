@@ -1,23 +1,21 @@
 $(document).ready(function(){
 
-	var tarea = function guardar(){
-		localStorage.tarea = document.getElementById("tarea").value;		
+	function guardar(){
+		var lista = $('#tarea').val();
+		$('#lista').append('<li>'+lista+'<button id="borrar">remove</button></li>');
 	}
 		
-	$(tarea).keypress(function(){
+	$('li').on('keypress', guardar);      		
+      		
 
-		if(tarea == ""){
-			alert("no debes dejar este campo vacio");
-		}else {	         		
-      		$('ul').append('<li>' + tarea + '</li>' + '<button id="borrar">remove</button>');      		
-      	}	
-
-      	$('#complet').click(function(){
-			$('#completado').before('#lista:first');
-		});
-
-		$('#borrar').click(function(){
+     $('#borrar').click(function(){
 			$('li').remove();
-		});
-    });		
+    });
+
+       	
+		
+
+    $('#complet').click(function(){
+			$('#completado').addpend('#tarea');
+		
 })
