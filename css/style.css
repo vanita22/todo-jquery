@@ -34,7 +34,12 @@ body{
 	background-color: rgba(110, 11, 77, 0.8);
 	width: 200px;
 	height: 900px;
-	float: right;
-	
+	float: right;	
+}
+
+button{
+	width: auto;
+	height: auto;
+	font-size: 10px;
 }
 

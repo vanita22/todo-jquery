@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var tarea = function guardar(){
-		localStorage.tarea = document.getElementById("tarea").value;
+		localStorage.tarea = document.getElementById("tarea").value;		
 	}
 		
 	$(tarea).keypress(function(){
@@ -9,8 +9,15 @@ $(document).ready(function(){
 		if(tarea == ""){
 			alert("no debes dejar este campo vacio");
 		}else {	         		
-      		$('ul').after('<li>' +'<label for="list">' + tarea+ '</label>' + '</li>');
+      		$('ul').append('<li>' + tarea + '</li>' + '<button id="borrar">remove</button>');      		
       	}	
-    });
-	
+
+      	$('#complet').click(function(){
+			$('#completado').before('#lista:first');
+		});
+
+		$('#borrar').click(function(){
+			$('li').remove();
+		});
+    });		
 })
