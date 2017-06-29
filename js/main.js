@@ -1,9 +1,10 @@
 $(document).ready(function(){
-	
-	$("#tarea").keypress(function() {
-		
-		var tarea = $("#tarea").val();
 
+	var tarea = function guardar(){
+		localStorage.tarea = document.getElementById("tarea").value;
+	}
+	
+	$(tarea).keypress(function() {
 
 		if(tarea == ""){
 			alert("no debes dejar este campo vacio");

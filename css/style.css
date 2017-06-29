@@ -1,9 +1,40 @@
 body{
 	background-color: purple;
+	font-weight: bold;
 }
 
 #box{
 	color: white;
 	background-color: rgba(0, 0, 0, 0.5);
+	width: 150px;
+	height: 400px;
+	float: left;
+	margin-top: 40px;
+}
+
+@media (max-width: 768px){
+	#box{
+		float: top;
+		width: 100%;
+		height: auto;
+	}
+	#box h3{
+		writing-mode: horizontal-tb;
+		margin-top: 0;
+	}
+}
+
+#box h3{
+	margin-top: 80px;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+
+#box-1{
+	background-color: rgba(110, 11, 77, 0.8);
+	width: 200px;
+	height: 900px;
+	float: right;
+	
 }
 
