@@ -7,52 +7,56 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"> 
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"> 
     
     <title>To Do App</title>
   </head>
   
   <body>
-  <div class="row" id="box">
-    <div class="col s12 m12 l12">
-    <div class="yellow lighten-1">
-      <h3>To Do App</h3>
+    <div class="row" id="box">
+      <div class="col s12 m12 l4 offset-l1">
+      <div class="black lighten-4 center">
+        <h3>To Do App</h3>
+        </div>
       </div>
     </div>
-  </div>
 
-    <div class="row" id="tarea">
-      <div class="col s12 m12 l12">
-      <div class="input-field col s2">
-      <input type="text" name="texto" placeholder="Ingresa Tarea" class="tarea2">
-      <h5>To Do Items:</h5>
-      <p></p>
-      </div>
+    <div class="row">
+      <div class="col s12 m12 l4 offset-l4">
+        <h3 class="header">To Do Items:</h3>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="https://lorempixel.com/100/190/nature/6">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <input type="text" placeholder="Ingresa Tarea" id="tarea">
+                <ul id="lista">
+                  
+                </ul>
+              </div>            
+            </div>
+        </div>
       </div>
     </div>
+
+     <div class="row">
+        <div class="col s12 m12 l5 offset-l4">
+          <div class="card small">
+            <div class="card-image">
+              <img src="https://lorempixel.com/500/200/nature/5">
+              <span class="card-title">Completed Items:</span>
+            </div>
+            <div class="card-content">
+              <div id="box-2"></div>
+            </div>            
+          </div>
+        </div>
+      </div>s
     
-    <div class="row">
-    <div class="col s12 m12 l12">
-    <div class="linea"></div>
-    </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m12 l12">     
-      <h5>Completed Items:</h5>
-      <p></p>
-      </div>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>    
   </body>
 </html>

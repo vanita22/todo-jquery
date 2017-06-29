@@ -1,12 +1,14 @@
 $(document).ready(function(){
-	$("input").intro(function(e){
-		e.preventDefault();
-		var tarea = $(".tarea2").val();
+	
+	$("#tarea").keypress(function() {
+		
+		var tarea = $("#tarea").val();
+
 
 		if(tarea == ""){
-			alert("debes escribir una tarea");
-		} else {
-			$("#tarea").append("")
-		}
-	})
+			alert("no debes dejar este campo vacio");
+		}else {	         		
+      		$('ul').after('<li>' +'<label for="list">' + tarea+ '</label>' + '</li>');
+      	}	
+	});
 })

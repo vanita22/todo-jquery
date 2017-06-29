@@ -1,4 +1,9 @@
-.linea{
-	width: 100%;
-	border-bottom: 2px solid purple;
+body{
+	background-color: purple;
 }
+
+#box{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
