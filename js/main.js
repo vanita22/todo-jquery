@@ -1,21 +1,24 @@
-$(document).ready(function(){
+$(document).ready(function(){ 
 
-	function guardar(){
+	function guardar(){		
 		var lista = $('#tarea').val();
-		$('#lista').append('<li>'+lista+'<button id="borrar">remove</button></li>');
+		$('#lista').append('<li><input type="checkbox" id="test5" checked="checked"/><label for="test5"></label> '+ " " + lista + " " +' <button class="borrar">remove</button></li>');
+		$('#tarea').val(' ');//sirve para limpiar el input despues de presionar el boton.
 	}
-		
-	$('li').on('keypress', guardar);      		
-      		
 
-     $('#borrar').click(function(){
-			$('li').remove();
-    });
+	function clear(){
+		$('#lista li').parent().remove();
+	}
 
-       	
-		
+	function cambio(){
+		$('#completado li').appendTo('#lista:first');		
+	}
 
-    $('#complet').click(function(){
-			$('#completado').addpend('#tarea');
-		
+	$(function(){		
+		$('#add').on('click', guardar);	
+		$('.borrar').on('click', clear);
+		$('#complet').on('click', cambio);		
+	});	
+
+
 })
